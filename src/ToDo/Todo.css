@@ -1,0 +1,42 @@
+.todo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .todo-box {
+    width: 250px;
+    border: 2px solid gray;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-box h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .todo-box .status {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* ✅ Completed style */
+  .completed {
+    border-color: green;
+    background-color: #e0f7e9;
+    color: green;
+  }
+  
+  /* ❌ Incomplete style */
+  .incomplete {
+    border-color: red;
+    background-color: #ffe6e6;
+    color: red;
+  }
+  
