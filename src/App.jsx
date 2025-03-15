@@ -5,7 +5,14 @@ import './App.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Todo from './ToDo/Todo'
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      // for refetching data when the window is focused , Contraception on the server
+      refetchOnWindowFocus: false,
+    },
+  },
+})
 
 function App() {
 
